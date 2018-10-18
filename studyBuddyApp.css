@@ -1,0 +1,48 @@
+﻿body
+{
+    background-color:aquamarine;
+}
+
+form{
+    background-color:cadetblue;
+    font-family:'Lucida Console';
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-left:20px;
+    margin-top:10px;
+}
+
+h2{
+    margin:auto;
+    margin-top:50px;
+    margin-bottom:30px;
+    max-width:600px;
+    font-family:'Lucida Console';
+}
+
+b{
+    margin-left:20px;
+}
+
+input[type=submit]{
+    background-color:aquamarine;
+    color:darkslategray;
+    margin-left:36.5%;
+    margin-bottom:30px;
+    font-family:'Lucida Console';
+    border:solid 2px darkslategray; 
+}
+
+input[type=submit]:hover{
+    background-color:aqua;
+    color:darkslategray;
+    margin-left:36.5%;
+    margin-bottom:30px;
+    font-family:'Lucida Console';
+    border:solid 2px darkslategray;
+}
