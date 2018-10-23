@@ -1,4 +1,4 @@
-﻿body
+body
 {
     background-color:aquamarine;
 }
@@ -45,4 +45,22 @@ input[type=submit]:hover{
     margin-bottom:30px;
     font-family:'Lucida Console';
     border:solid 2px darkslategray;
+}
+
+input[type=button]{
+    background-color:cadetblue;
+    color:darkslategray;
+    margin-left:2%;
+    margin-bottom:30px;
+    font-family:'Lucida Console';
+    border:solid 2px cadetblue;
+}
+
+input[type=button]:hover{
+    background-color:cadetblue;
+    color:black;
+    margin-left:2%;
+    margin-bottom:30px;
+    font-family:'Lucida Console';
+    border:solid 2px cadetblue;
 }
