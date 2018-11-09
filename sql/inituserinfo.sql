@@ -1,0 +1,7 @@
+CREATE TABLE userinfo IF NOT EXISTS (
+username VARCHAR(45) NOT NULL,
+school VARCHAR(45) NOT NULL,
+availability VARCHAR(45) NOT NULL,
+contact VARCHAR(45) NOT NULL,
+PRIMARY KEY (username)
+);
