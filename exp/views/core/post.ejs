@@ -16,19 +16,24 @@
     <table width="25%" border="0">
         <tr>
             <td>Email</td>
-            <td><input type="text" name="name" id="username" value="<%= username %>"></td>
+            <td><input type="text" name="username" id="username" value="<%= username %>"/></td>
         </tr>
         <tr>
             <td>School</td>
-            <td><input type="text" name="school" value="<%= school %>" placeholder="University of Colorado"></td>
+            <td><input type="text" name="school" value="<%= school %>" placeholder="University of Colorado"/></td>
         </tr>
         <tr>
             <td>Class</td>
-            <td><input type="text" name="class" value="<%= class %>" placeholder="MATH1300"></td>
+            <td><input type="text" name="class1" value="<%= class1 %>" placeholder="MATH1300"/></td>
         </tr>
         <tr>
+        <tr>
             <td>Availability</td>
-            <td><input type="submit" name="Submit" value="Add" placeholder="5:00PM-7:00PM"></td>
+            <td><input type="text" name="availability" value="<%= availability %>" placeholder="5:00PM-7:00PM"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="Submit" value="Post"/></td>
         </tr>
     </table>
 </form>

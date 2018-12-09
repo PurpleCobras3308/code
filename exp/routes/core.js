@@ -26,7 +26,7 @@ app.get('/post', function (request, response)
 });
 
 //Search Function, returns results
-app.post('/results', function (request,response)
+app.post('/search', function (request,response)
 {
 	request.assert('school', 'school is required').notEmpty();	//Input validation
   request.assert('class', 'class is required').notEmpty();
