@@ -1,0 +1,112 @@
+﻿<!-- Rachel Mamich
+     CSCI 3308
+-->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="searchResults.css" type="text/css" rel="stylesheet" />
+    <title>studyBuddyAppNewUser</title>
+</head>
+<body>
+    <h3>Please fill out the user form below:</h3>
+    <br />
+    <form>
+        <b>Enter your school name:</b><br />
+        <input type="text" School="School Name" value="" placeholder="Example:University of Colorado Boulder"><br>
+        <br />
+        <b>Class Subject:</b><br>
+        <input type="text" Subject="Class Subject" value="" placeholder="Example:CSCI"><br><br />
+        <b>Course Number:</b><br>
+        <input type="number" name="Course number" value="" placeholder="Example:3308"><br><br />
+        <b>Section Number:</b><br>
+        <input type="number" name="Section number" value="" placeholder="Example:110"><br><br />
+        <div id="odd">
+            Monday <input type="checkbox" name="M8-9am" value="M8-9am">8:00-9:00am
+            <input type="checkbox" name="M9-10am" value="M9-10am">9:00-10:00am
+            <input type="checkbox" name="M10-11am" value="M10-11am">10:00-11:00am
+            <input type="checkbox" name="M11-12pm" value="M11-12pm">11:00-12:00pm
+            <input type="checkbox" name="M12-1pm" value="M12-1pm">12:00-1:00pm
+            <input type="checkbox" name="M1-2pm" value="M1-2pm">1:00-2:00pm
+            <input type="checkbox" name="M2-3pm" value="M2-3pm">2:00-3:00pm
+            <input type="checkbox" name="M3-4pm" value="M3-4pm">3:00-4:00pm
+            <input type="checkbox" name="M4-5pm" value="M4-5pm">4:00-5:00pm
+            <input type="checkbox" name="M3-4pm" value="M5-6pm">5:00-6:00pm
+            <input type="checkbox" name="M6-7pm" value="M6-7pm">6:00-7:00pm
+            <input type="checkbox" name="M7-8pm" value="M7-8pm">7:00-8:00pm
+            <input type="checkbox" name="M8-9pm" value="M8-9pm">8:00-9:00pm
+            <input type="checkbox" name="M9-10pm" value="M9-10pm">9:00-10:00pm<br>
+        </div>
+        <div>
+            Tuesday <input type="checkbox" name="T8-9am" value="T8-9am">8:00-9:00am
+            <input type="checkbox" name="T9-10am" value="T9-10am">9:00-10:00am
+            <input type="checkbox" name="T10-11am" value="T10-11am">10:00-11:00am
+            <input type="checkbox" name="T11-12pm" value="T11-12pm">11:00-12:00pm
+            <input type="checkbox" name="T12-1pm" value="T12-1pm">12:00-1:00pm
+            <input type="checkbox" name="T1-2pm" value="T1-2pm">1:00-2:00pm
+            <input type="checkbox" name="T2-3pm" value="T2-3pm">2:00-3:00pm
+            <input type="checkbox" name="T3-4pm" value="T3-4pm">3:00-4:00pm
+            <input type="checkbox" name="T4-5pm" value="T4-5pm">4:00-5:00pm
+            <input type="checkbox" name="T3-4pm" value="T5-6pm">5:00-6:00pm
+            <input type="checkbox" name="T6-7pm" value="T6-7pm">6:00-7:00pm
+            <input type="checkbox" name="T7-8pm" value="T7-8pm">7:00-8:00pm
+            <input type="checkbox" name="T8-9pm" value="T8-9pm">8:00-9:00pm
+            <input type="checkbox" name="T9-10pm" value="T9-10pm">9:00-10:00pm<br>
+        </div>
+        <div id="odd">
+            Wednesday <input type="checkbox" name="W8-9am" value="W8-9am">8:00-9:00am
+            <input type="checkbox" name="W9-10am" value="W9-10am">9:00-10:00am
+            <input type="checkbox" name="W10-11am" value="W10-11am">10:00-11:00am
+            <input type="checkbox" name="W11-12pm" value="W11-12pm">11:00-12:00pm
+            <input type="checkbox" name="W12-1pm" value="W12-1pm">12:00-1:00pm
+            <input type="checkbox" name="W1-2pm" value="W1-2pm">1:00-2:00pm
+            <input type="checkbox" name="W2-3pm" value="W2-3pm">2:00-3:00pm
+            <input type="checkbox" name="W3-4pm" value="W3-4pm">3:00-4:00pm
+            <input type="checkbox" name="W4-5pm" value="W4-5pm">4:00-5:00pm
+            <input type="checkbox" name="W3-4pm" value="W5-6pm">5:00-6:00pm
+            <input type="checkbox" name="W6-7pm" value="W6-7pm">6:00-7:00pm
+            <input type="checkbox" name="W7-8pm" value="W7-8pm">7:00-8:00pm
+            <input type="checkbox" name="W8-9pm" value="W8-9pm">8:00-9:00pm
+            <input type="checkbox" name="W9-10pm" value="W9-10pm">9:00-10:00pm<br>
+        </div>
+        <div>
+            Thursday <input type="checkbox" name="Th8-9am" value="Th8-9am">8:00-9:00am
+            <input type="checkbox" name="Th9-10am" value="Th9-10am">9:00-10:00am
+            <input type="checkbox" name="Th10-11am" value="Th10-11am">10:00-11:00am
+            <input type="checkbox" name="Th11-12pm" value="Th11-12pm">11:00-12:00pm
+            <input type="checkbox" name="Th12-1pm" value="Th12-1pm">12:00-1:00pm
+            <input type="checkbox" name="Th1-2pm" value="Th1-2pm">1:00-2:00pm
+            <input type="checkbox" name="Th2-3pm" value="Th2-3pm">2:00-3:00pm
+            <input type="checkbox" name="Th3-4pm" value="Th3-4pm">3:00-4:00pm
+            <input type="checkbox" name="Th4-5pm" value="Th4-5pm">4:00-5:00pm
+            <input type="checkbox" name="Th3-4pm" value="Th5-6pm">5:00-6:00pm
+            <input type="checkbox" name="Th6-7pm" value="Th6-7pm">6:00-7:00pm
+            <input type="checkbox" name="Th7-8pm" value="Th7-8pm">7:00-8:00pm
+            <input type="checkbox" name="Th8-9pm" value="Th8-9pm">8:00-9:00pm
+            <input type="checkbox" name="Th9-10pm" value="Th9-10pm">9:00-10:00pm<br>
+        </div>
+        <div id="odd">
+        Friday <input type="checkbox" name="F8-9am" value="F8-9am">8:00-9:00am
+        <input type="checkbox" name="F9-10am" value="F9-10am">9:00-10:00am
+        <input type="checkbox" name="F10-11am" value="F10-11am">10:00-11:00am
+        <input type="checkbox" name="F11-12pm" value="F11-12pm">11:00-12:00pm
+        <input type="checkbox" name="F12-1pm" value="F12-1pm">12:00-1:00pm
+        <input type="checkbox" name="F1-2pm" value="F1-2pm">1:00-2:00pm
+        <input type="checkbox" name="F2-3pm" value="F2-3pm">2:00-3:00pm
+        <input type="checkbox" name="F3-4pm" value="F3-4pm">3:00-4:00pm
+        <input type="checkbox" name="F4-5pm" value="F4-5pm">4:00-5:00pm
+        <input type="checkbox" name="F3-4pm" value="F5-6pm">5:00-6:00pm
+        <input type="checkbox" name="F6-7pm" value="F6-7pm">6:00-7:00pm
+        <input type="checkbox" name="F7-8pm" value="F7-8pm">7:00-8:00pm
+        <input type="checkbox" name="F8-9pm" value="F8-9pm">8:00-9:00pm
+        <input type="checkbox" name="F9-10pm" value="F9-10pm">9:00-10:00pm<br></div>
+        <br>
+        <a href="searchAPP.html">
+            <input type="button" value="Enter", style="margin-left: 2%">
+        </a>
+    </form>
+</body>
+</html>

@@ -58,7 +58,7 @@ input[type=submit] {
 input[type=button] {
     background-color: aquamarine;
     color: darkslategray;
-    margin-left: 36.5%;
+    margin-left: 20%;
     margin-bottom: 30px;
     font-family: 'Lucida Console';
     border: solid 2px darkslategray;
@@ -67,7 +67,7 @@ input[type=button] {
     input[type=button]:hover {
         background-color: aqua;
         color: darkslategray;
-        margin-left: 36.5%;
+        margin-left: 20%;
         margin-bottom: 30px;
         font-family: 'Lucida Console';
         border: solid 2px darkslategray;
