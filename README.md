@@ -8,4 +8,4 @@ The home directory has the app's HTML and CSS files, the test plan pdf, and the 
 No compilation necessary.
 
 # Usage 
-Go to its Heroku page at: 
+Go to its Heroku page at: https://purplecobras3308project.herokuapp.com
