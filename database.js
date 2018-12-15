@@ -1,12 +1,16 @@
 var pgp = require('pg-promise')();
 
-const dbConfig = process.env.DATABASE_URL; = {
+// Local Testing
+/*const dbConfig = {
    host: 'localhost',
    port: 5432,
-   database: 'projectDB',
+   database: 'projectdb',
    user: 'postgres',
-   password: 'password' // Add field for deployment testing
-};
+   password: 'password'
+};*/
+
+//Deployment
+const dbConfig = process.env.DATABASE_URL;
 
 var db = pgp(dbConfig);
 

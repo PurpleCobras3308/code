@@ -1,8 +1,6 @@
 var express = require('express');
 var app = express();
 
-app.use(express.static(__dirname + '/public')); //Enable CSS
-
 app.set('view engine','ejs');
 
 var expressValidator = require('express-validator');
@@ -37,13 +35,19 @@ app.use(session(
         cookie: {maxAge: 60000}
     }));
 app.use(flash());
+app.use(express.static('public')); //Enable CSS
 
 var index = require('./routes/index');
-var store = require('./routes/store');
+var core = require('./routes/core');
 app.use('/', index);
-app.use('/store', store);
+app.use('/core', core);
 
+//Local Testing
+//var port = 4000;
+
+//Deployment
 var port = process.env.PORT;
+
 app.listen(port, function () {
     console.log('Server running on http://localhost:' + port)
 });
