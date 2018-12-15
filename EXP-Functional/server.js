@@ -42,12 +42,7 @@ var core = require('./routes/core');
 app.use('/', index);
 app.use('/core', core);
 
-//Local Testing
-//var port = 4000;
-
-//Deployment
-var port = process.env.PORT;
-
+var port = 4000;
 app.listen(port, function () {
     console.log('Server running on http://localhost:' + port)
 });

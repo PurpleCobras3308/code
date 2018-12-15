@@ -1,0 +1,34 @@
+<!--Qinglu Sun-->
+
+<!--Header for Navigation-->
+<%- include ../layouts/header.ejs %>
+
+<% if (messages.error) { %>
+    <p style="color:red"><%- messages.error %></p>
+<% } %>
+<% if (messages.success) { %>
+    <p style="color:green"><%- messages.success %></p>
+<% } %>
+
+<script type="text/javascript">
+    var err = <%- JSON.stringify(messages) %>;
+    console.log(err);
+</script>
+
+
+
+<!-- <link href="searchApp.css" type="text/css" rel="stylesheet" /> -->
+<link href="https://drive.google.com/open?id=1peEXRvjz5XWEnpjMNwyh-10gkFmULWW8" type="text/css" rel="stylesheet" />
+<h2>Find your classmate!</h2>
+<br/>
+<form action="/core/search" method="post" name="form1">
+
+			<b>Enter your school name</b><br/>
+			<input type="text" name="school" id="school" placeholder="Example: University of Colorado Boulder"><br>
+<br />
+			<b>Class and Course Number</b><br>
+			<input type="text" name="class1" id="class1" placeholder="Example: CSCI3104"><br><br/>
+			<input type="submit" value="Search">
+		</form>
+		
+<%- include ../layouts/footer.ejs %>
